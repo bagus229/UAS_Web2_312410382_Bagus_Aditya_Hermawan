@@ -29,5 +29,5 @@ Hak Akses
 - Administrator: Mengelola data master dan aktivitas logout.
 
 ## Dokumentasi
-#### Skema relasi tabel databse
+Skema relasi tabel databse
 ##### ![Gambar 1](ss1/gambar3.png).

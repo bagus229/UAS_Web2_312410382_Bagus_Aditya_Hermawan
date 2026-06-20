@@ -38,8 +38,10 @@ Uji tembak API gagal (error 401)
 ## Dokumentasi Antarimuka Aplikasi (UI)
 ### 1. Halaman login
 ##### ![Gambar 1](ss2/gambar3.png).
+
 ### 2. Halaman dashboard admin
 ##### ![Gambar 1](ss2/gambar4.png).
+
 ### 3. Form modal
 - Modal tambah:
   - Barang dan Stok

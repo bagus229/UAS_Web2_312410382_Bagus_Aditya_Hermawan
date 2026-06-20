@@ -28,7 +28,7 @@ Hak Akses
 - Pengunjung: halaman beranda
 - Administrator: Mengelola data master dan aktivitas logout.
 
-## Dokumentasi
+## Dokumentasi Database dan Uji Coba
 Skema relasi tabel databse
 ##### ![Gambar 1](ss1/gambar1.png).
 
@@ -36,3 +36,8 @@ Uji tembak API gagal (error 401)
 ##### ![Gambar 1](ss1/gambar2.png).
 
 ## Dokumentasi Antarimuka Aplikasi (UI)
+1. Halaman login
+2. Halaman dashboard admin
+3. Form modal
+Modal 
+4. Tabel data

@@ -39,36 +39,38 @@ Uji tembak API gagal (error 401)
 ### 1. Halaman login
 ##### ![Gambar 1](ss2/gambar3.png).
 
-### 2. Halaman dashboard admin
+### 2. Halaman Home dan dashboard admin
 ##### ![Gambar 1](ss2/gambar4.png).
 
-### 3. Form modal
+### 3. Halaman Home pengunjung
+##### ![Gambar 1](ss2/gambar5.png).
+### 4. Form modal
 Modal tambah:
 - Barang dan Stok
-##### ![Gambar 1](ss2/gambar5.png).
-- Supplier
 ##### ![Gambar 1](ss2/gambar6.png).
-- Histori
+- Supplier
 ##### ![Gambar 1](ss2/gambar7.png).
-- Kategori
+- Histori
 ##### ![Gambar 1](ss2/gambar8.png).
+- Kategori
+##### ![Gambar 1](ss2/gambar9.png).
 
 Modal Edit:
 - Barang dan Stok
-##### ![Gambar 1](ss2/gambar9.png).
-- Supplier
 ##### ![Gambar 1](ss2/gambar10.png).
-- Histori
-##### ![Gambar 1](ss2/gambar11.png).
-- Kategori
-##### ![Gambar 1](ss2/gambar12.png).
-
-### 4. Tabel data
-- Barang dan Stok
-##### ![Gambar 1](ss2/gambar13.png).
 - Supplier
-##### ![Gambar 1](ss2/gambar14.png).
+##### ![Gambar 1](ss2/gambar11.png).
 - Histori
-##### ![Gambar 1](ss2/gambar15.png).
+##### ![Gambar 1](ss2/gambar12.png).
 - Kategori
+##### ![Gambar 1](ss2/gambar13.png).
+
+### 5. Tabel data
+- Barang dan Stok
+##### ![Gambar 1](ss2/gambar14.png).
+- Supplier
+##### ![Gambar 1](ss2/gambar15.png).
+- Histori
 ##### ![Gambar 1](ss2/gambar16.png).
+- Kategori
+##### ![Gambar 1](ss2/gambar17.png).

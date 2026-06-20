@@ -95,7 +95,7 @@ Modal Edit:
 4. Import file SQL struktur tabel (`kategori`, `barang`, `supplier`, `histori_barang`, `users`) ke database tersebut melalui menu **Import**.
 5. (Opsional) Jalankan query untuk menambahkan akun admin awal:
    ```sql
-   INSERT INTO users (email, password, token)
+   INSERT INTO users (email, password, token, created_at, update_at)
    VALUES (
        'admin@inventory.com',
        '$2b$10$PRXHkS/oAzZrJibx93Dgb.24kdFOCzwfOXIcFJpfrqQbb/iK.kkuu',

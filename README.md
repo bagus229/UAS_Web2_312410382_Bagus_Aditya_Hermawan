@@ -43,7 +43,7 @@ Uji tembak API gagal (error 401)
 ##### ![Gambar 1](ss2/gambar4.png).
 
 ### 3. Form modal
-- Modal tambah:
+Modal tambah:
 - Barang dan Stok
 ##### ![Gambar 1](ss2/gambar5.png).
 - Supplier
@@ -53,7 +53,7 @@ Uji tembak API gagal (error 401)
 - Kategori
 ##### ![Gambar 1](ss2/gambar8.png).
 
-- Modal Edit:
+Modal Edit:
 - Barang dan Stok
 ##### ![Gambar 1](ss2/gambar9.png).
 - Supplier

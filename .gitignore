@@ -1,0 +1,11 @@
+# CI4 writable logs
+backend-api/writable/logs/
+backend-api/writable/debugbar/
+
+# cache & session CI4 (biar aman sekalian)
+backend-api/writable/cache/
+backend-api/writable/session/
+
+# system files
+.DS_Store
+.env

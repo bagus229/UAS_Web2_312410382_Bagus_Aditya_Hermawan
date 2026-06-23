@@ -21,7 +21,7 @@ const Home = {
                     secara cepat, aman, dan terintegrasi.
                 </p>
 
-                <div class="grid md:grid-cols-3 gap-4 mt-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
 
                     <div class="bg-white shadow-md rounded-lg p-5">
                         <h3 class="font-semibold text-xl mb-2">Data Barang</h3>

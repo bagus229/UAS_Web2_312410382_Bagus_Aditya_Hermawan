@@ -5,8 +5,7 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Home::index');
 $routes->options('(:any)', function() {});
-$routes->post('api/login', 'Api\Auth::login');
-$routes->get('dashboard-summary', 'Api\Dashboard::summary'); 
+$routes->post('api/login', 'Api\Auth::login'); 
 $routes->get('api/dashboard-summary', 'Api\Dashboard::summary');
 
 $routes->group('api', ['filter' => 'auth'], function ($routes) {

@@ -74,12 +74,10 @@ class Filters extends BaseFilters
    public array $globals = [
     'before' => [
         'cors', // Pastikan ada koma di sini
-        'auth' => [
-            'except' => ['api/login', '/']
         ],
     ],
     'after' => [
-        'toolbar',
+
     ],
 ];
 

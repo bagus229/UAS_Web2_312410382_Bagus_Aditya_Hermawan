@@ -67,17 +67,12 @@ const Home = {
     },
 
     mounted() {
-    // Gunakan axios langsung (karena kita sudah setting baseURL di app.js)
-    axios.get('/api/dashboard-summary')
-        .then(res => {
-            this.summary = res.data;
-        })
-        .catch(err => {
-            console.error('Gagal load summary', err);
-            // Tambahkan logika jika ingin memberikan feedback ke user
-            if (err.response && err.response.status === 401) {
-                // Interceptor di app.js akan menangani redirect ke login
-            }
-        });
-}
+        axios.get(apiUrl + '/api/dashboard-summary')
+            .then(res => {
+                this.summary = res.data;
+            })
+            .catch(err => {
+                console.error('Gagal load summary', err);
+            });
+    }
 };

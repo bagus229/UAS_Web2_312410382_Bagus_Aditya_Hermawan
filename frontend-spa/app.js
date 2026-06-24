@@ -7,10 +7,6 @@ const { createRouter, createWebHashHistory } = VueRouter;
 
 const apiUrl = 'https://uasweb2312410382bagusadityahermawan-production.up.railway.app'; // Ganti dengan domain Railway Anda nanti jika sudah di-deploy
 
-
-// Sekarang di komponen Home.js kamu, cukup panggil:
-// axios.get('/api/dashboard-summary')  <-- Ini otomatis akan menjadi ke domain Railway
-
 // =====================================
 // AXIOS REQUEST INTERCEPTOR
 // =====================================

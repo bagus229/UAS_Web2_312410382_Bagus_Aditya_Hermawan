@@ -6,7 +6,8 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/', 'Home::index');
 $routes->options('(:any)', function() {});
 $routes->post('api/login', 'Api\Auth::login');
-$routes->get('api/dashboard-summary', 'Api\Dashboard::summary');
+$routes->get('api/dashboard-summary', [App\Controllers\Api\Dashboard::class, 'summary']);
+
 $routes->group('api', ['filter' => 'auth'], function ($routes) {
     $routes->post('logout', 'Api\Auth::logout');
     $routes->get('kategori', 'Api\Kategori::index');

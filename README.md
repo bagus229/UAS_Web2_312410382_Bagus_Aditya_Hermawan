@@ -138,5 +138,5 @@ Menggunakan akun admin yang sudah dibuat pada database.
 - username/email: admin@inventory.com.
 - password: admin123.
 
-Link demo:.
-Link presentasi proyek:.
+Link demo: https://uas-web2-312410382-bagus-aditya-her.vercel.app/#/.
+Link presentasi proyek: https://youtu.be/nfqkbWNG-fY.

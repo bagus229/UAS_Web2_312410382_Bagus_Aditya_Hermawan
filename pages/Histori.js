@@ -104,7 +104,7 @@ const Histori = {
 
     methods: {
         loadData() {
-            axios.get(apiUrl + '/api/histori')
+            axios.get(apiUrl + 'https://e-inventory.up.railway.app/api/dashboard-summary')
                 .then(res => { this.histori = res.data; })
                 .catch(err => { console.log(err); });
         },

@@ -67,7 +67,7 @@ const Home = {
     },
 
     mounted() {
-        axios.get(apiUrl + '/api/dashboard-summary')
+        axios.get(apiUrl + 'https://e-inventory.up.railway.app/api/dashboard-summary')
         .then(res => {
             this.summary = res.data;
         })

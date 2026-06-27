@@ -69,7 +69,7 @@ template: `
   },
   methods: {
     login() {
-      axios.post(apiUrl + '/api/login', {
+      axios.post(apiUrl + 'https://e-inventory.up.railway.app/api/dashboard-summary', {
         email: this.email,
         password: this.password
       })

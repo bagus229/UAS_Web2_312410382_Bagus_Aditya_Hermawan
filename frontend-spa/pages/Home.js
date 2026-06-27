@@ -68,9 +68,15 @@ const Home = {
 
     mounted() {
         axios.get(apiUrl + '/api/dashboard-summary')
+<<<<<<< HEAD
             .then(res => {
                 this.summary = res.data.data;
             })
+=======
+        .then(res => {
+            this.summary = res.data.data;
+        })
+>>>>>>> c279944 (update)
             .catch(err => {
                 console.error('Gagal load summary', err);
             });

@@ -5,9 +5,15 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Home::index');
 $routes->options('(:any)', function() {});
+<<<<<<< HEAD
 $routes->post('api/login', 'Api\Auth::login'); 
 $routes->get('dashboard-summary', 'Api\Dashboard::summary');
+=======
+$routes->post('api/login', 'Api\Auth::login');
+$routes->get('dashboard-summary', 'Api\Dashboard::summary'); 
+>>>>>>> c279944 (update)
 
+$routes->get('api/dashboard-summary', 'Api\Dashboard::summary');
 $routes->group('api', ['filter' => 'auth'], function ($routes) {
     $routes->post('logout', 'Api\Auth::logout');
     $routes->get('kategori', 'Api\Kategori::index');

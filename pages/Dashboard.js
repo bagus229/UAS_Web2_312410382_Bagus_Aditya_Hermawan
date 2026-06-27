@@ -46,8 +46,17 @@ const Dashboard = {
       }
     };
   },
-  mounted() {
-    this.loadSummary();
+  loadSummary() {
+      axios.get(apiUrl + '/api/dashboard-summary')
+          .then(res => {
+              this.summary = res.data.data;
+          })
+          .catch(err => {
+              console.error(err);
+          })
+          .finally(() => {
+              this.loading = false;
+          });
   },
   methods: {
     loadSummary() {

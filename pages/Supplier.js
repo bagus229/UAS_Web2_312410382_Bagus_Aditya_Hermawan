@@ -75,7 +75,7 @@ const Supplier = {
 
     methods: {
         loadData() {
-            axios.get(apiUrl + 'https://e-inventory.up.railway.app/api/dashboard-summary')
+            axios.get(apiUrl + '/api/supplier')
                 .then(res => { this.supplier = res.data; })
                 .catch(err => { console.log(err); });
         },

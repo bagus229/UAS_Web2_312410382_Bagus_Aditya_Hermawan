@@ -69,7 +69,7 @@ const Kategori = {
 
     methods: {
         loadData() {
-            axios.get(apiUrl + 'https://e-inventory.up.railway.app/api/dashboard-summary')
+            axios.get(apiUrl + '/api/kategori')
                 .then(res => { this.kategori = res.data; })
                 .catch(err => { console.log(err); });
         },

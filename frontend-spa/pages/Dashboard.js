@@ -53,11 +53,8 @@ const Dashboard = {
     loadSummary() {
       axios.get(apiUrl + '/api/dashboard-summary')
         .then(res => {
-<<<<<<< HEAD
             this.summary = res.data;
-=======
           this.summary = res.data.data;
->>>>>>> 0df23a909725c3d98525d52e5dae46b13d1af0ad
         })
         .catch(() => {
           console.error('Gagal memuat ringkasan dashboard');

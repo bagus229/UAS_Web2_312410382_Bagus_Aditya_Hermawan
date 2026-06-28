@@ -76,7 +76,7 @@ const Supplier = {
     methods: {
         loadData() {
             axios.get(apiUrl + '/api/supplier')
-                .then(res => { this.supplier = res.data; })
+                .then(res => { this.supplier = res.data.data; })
                 .catch(err => { console.log(err); });
         },
         tambah() {

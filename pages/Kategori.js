@@ -70,7 +70,7 @@ const Kategori = {
     methods: {
         loadData() {
             axios.get(apiUrl + '/api/kategori')
-                .then(res => { this.kategori = res.data; })
+                .then(res => { this.kategori = res.data.data; })
                 .catch(err => { console.log(err); });
         },
         tambah() {
@@ -84,10 +84,10 @@ const Kategori = {
             this.formData = { id: data.id, nama_kategori: data.nama_kategori, deskripsi: data.deskripsi };
         },
         hapus(index, id) {
-            if (confirm('Yakin menghapus data?')) {
-                axios.delete(apiUrl + '/api/kategori/' + id)
-                    .then(() => { this.kategori.splice(index, 1); })
-                    .catch(err => { console.log(err); });
+        if (confirm('Yakin menghapus data?')) {
+            axios.delete(apiUrl + '/api/kategori/' + id)
+                .then(() => { this.loadData(); })
+                .catch(err => { console.log(err); });
             }
         },
         saveData() {

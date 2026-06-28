@@ -17,12 +17,12 @@ const Login = {
           </div>
           <div class="mb-4">
             <label class="block text-sm font-medium text-gray-700 mb-1">
-              Username
+              Email
             </label>
             <input
-              v-model="username"
-              type="text"
-              placeholder="Masukkan username"
+              v-model="email"
+              type="email"
+              placeholder="Masukkan email"
               class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition"
             >
           </div>
@@ -52,14 +52,14 @@ const Login = {
   `,
   data() {
     return {
-      username: '',
+      email: '',
       password: ''
     };
   },
   methods: {
     login() {
       axios.post(apiUrl + '/api/login', {
-        username: this.username,
+        email: this.email,
         password: this.password
       })
         .then(res => {

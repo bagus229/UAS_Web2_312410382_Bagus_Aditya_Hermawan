@@ -70,7 +70,7 @@ template: `
   methods: {
     login() {
       axios.post(apiUrl + '/api/login', {
-        email: this.email,
+        username: this.username,
         password: this.password
       })
         .then(res => {

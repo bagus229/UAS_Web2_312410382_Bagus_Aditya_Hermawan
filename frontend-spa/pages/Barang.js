@@ -179,4 +179,3 @@ const Barang = {
 }   // <-- penutup methods
 
 };  // <-- penutup const Barang
-};

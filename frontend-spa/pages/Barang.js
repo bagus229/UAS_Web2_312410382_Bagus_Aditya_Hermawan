@@ -141,18 +141,42 @@ const Barang = {
         axios.put(apiUrl + '/api/barang/' + this.formData.id, this.formData)
             .then(() => {
                 this.loadData();
-                this.formData = { id: null, kode_barang: '', nama_barang: '', id_kategori: '', id_supplier: '', stok: 0, satuan: '', harga_beli: 0, harga_jual: 0 };
+                this.formData = {
+                    id: null,
+                    kode_barang: '',
+                    nama_barang: '',
+                    id_kategori: '',
+                    id_supplier: '',
+                    stok: 0,
+                    satuan: '',
+                    harga_beli: 0,
+                    harga_jual: 0
+                };
                 this.showForm = false;
             })
-            .catch(err => { console.log(err); });
+            .catch(err => console.log(err));
     } else {
         axios.post(apiUrl + '/api/barang', this.formData)
             .then(() => {
                 this.loadData();
-                this.formData = { id: null, kode_barang: '', nama_barang: '', id_kategori: '', id_supplier: '', stok: 0, satuan: '', harga_beli: 0, harga_jual: 0 };
+                this.formData = {
+                    id: null,
+                    kode_barang: '',
+                    nama_barang: '',
+                    id_kategori: '',
+                    id_supplier: '',
+                    stok: 0,
+                    satuan: '',
+                    harga_beli: 0,
+                    harga_jual: 0
+                };
                 this.showForm = false;
             })
-            .catch(err => { console.log(err); });
+            .catch(err => console.log(err));
     }
-}
+}   // <-- penutup saveData
+
+}   // <-- penutup methods
+
+};  // <-- penutup const Barang
 };

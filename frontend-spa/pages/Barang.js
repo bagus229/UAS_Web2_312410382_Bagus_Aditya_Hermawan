@@ -137,17 +137,22 @@ const Barang = {
             }
         },
         saveData() {
-            if (this.formData.id) {
-                axios.put(apiUrl + '/api/barang/' + this.formData.id, this.formData)
-                    .then(() => { this.loadData(); })
-                    .catch(err => { console.log(err); });
-            } else {
-                axios.post(apiUrl + '/api/barang', this.formData)
-                    .then(() => { this.loadData(); })
-                    .catch(err => { console.log(err); });
-            }
-            this.formData = { id: null, kode_barang: '', nama_barang: '', id_kategori: '', id_supplier: '', stok: 0, satuan: '', harga_beli: 0, harga_jual: 0 };
-            this.showForm = false;
-        }
+    if (this.formData.id) {
+        axios.put(apiUrl + '/api/barang/' + this.formData.id, this.formData)
+            .then(() => {
+                this.loadData();
+                this.formData = { id: null, kode_barang: '', nama_barang: '', id_kategori: '', id_supplier: '', stok: 0, satuan: '', harga_beli: 0, harga_jual: 0 };
+                this.showForm = false;
+            })
+            .catch(err => { console.log(err); });
+    } else {
+        axios.post(apiUrl + '/api/barang', this.formData)
+            .then(() => {
+                this.loadData();
+                this.formData = { id: null, kode_barang: '', nama_barang: '', id_kategori: '', id_supplier: '', stok: 0, satuan: '', harga_beli: 0, harga_jual: 0 };
+                this.showForm = false;
+            })
+            .catch(err => { console.log(err); });
     }
+}
 };
